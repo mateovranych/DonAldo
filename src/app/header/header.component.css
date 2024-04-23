@@ -1,0 +1,30 @@
+.container{
+
+    height: 100px;
+    width: 100%;
+
+    background-color: lightsalmon;
+
+    margin: 0;
+
+
+
+
+ 
+
+}
+.sub-container{
+
+    height: 100px;
+    width: 200px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: antiquewhite;
+
+}
+
