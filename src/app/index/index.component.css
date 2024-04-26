@@ -1,4 +1,43 @@
-.container{
+.body{
     margin: 0;
+    padding: 0;
     height: 100%;
+}
+
+.container{
+    display: flex;
+    height: 860px;
+}
+
+
+.left, .right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    background-color: rgb(82, 1, 1);
+    font-size: 9px;
+    
+}
+.left .descrip{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 140px;
+    
+}
+
+
+.right{
+
+    background-image: url(restaurant.jpg);
+    background-size: cover; 
+   background-position: center; 
+    
+    
 }
