@@ -1,9 +1,21 @@
-
 <div class="container">
-    <div class="sub-container">
-    <div class="tittle">
-        <h1>Resto la casita Don Aldo</h1>
-    </div>
-        
-    </div>
+  <div class="mnuDesplegable">
+    <button mat-button [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon></button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="navigateTo('home')">Home</button>
+      <button mat-menu-item (click)="navigateTo('carta')">Carta</button>
+      <button mat-menu-item (click)="navigateTo('pedidosYa')">PedidosYa</button>
+      <button mat-menu-item (click)="navigateTo('whatsapp')">Whatsapp</button>
+    </mat-menu>
+
+  </div>
+  <div class="title">
+    <h1>Resto la casita Don Aldo</h1>
+  </div>
+
+  <div class="btnReserva">
+    <button class="width 60px">Reservá acá!</button>
+  </div>
+
 </div>
