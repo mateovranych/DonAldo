@@ -30,7 +30,7 @@ export class HeaderComponent {
   constructor(private router: Router) {}
 
   navigateTo(route: string) {
-    // Aquí puedes implementar la lógica para navegar a la ruta deseada
+    
     this.router.navigate([route]);
   }
 

@@ -2,19 +2,68 @@
 
     display: flex;
     margin: 0;
+    padding: 15px;
     
 
     justify-content: space-evenly;
-
-    height: 330px;
-    font-size: 24px;
-
     
 
+    height: 300px;
+    font-size: 24px;
+   
+
 }
+.left{
+
+    display: block;
+    
+}
+
+.right{
+    
+    margin: 0;
+
+}
+.mid{
+
+    margin: 0;
+
+}
+
+.left a{
+
+    display: block;
+
+    
+}
+
+.p{
+    font-size: 20px;
+}
+
 .maps{
 
-    margin-top: 30px;
+    margin-top: 20px;
 
-    
 }
+
+.ref{
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.ref p{
+    max-width: 1000px;
+}
+
+.redes a{
+    
+   
+}
+
+
+
