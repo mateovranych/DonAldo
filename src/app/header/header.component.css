@@ -25,29 +25,91 @@
     background-color: black; /* Cambia el color de fondo del menú desplegable */
   }
   
-  .btnReserva {
+  /* .btnReserva {
 
     display: flex;
     padding: 30px;
 
     height: 38px;
+
+    
     
     
   }
+  .btnReserva button{
+
+    color: white;
+    background-color: transparent;
+    border: none;
+    
+  }
+
+  .btnReserva button:hover {
+    background-color: white; 
+    color: black;
+}
+ */
+
+
+ .btnReserva {
+
+    display: flex;
+    
+    
+  }
+
+  .btnReserva button{
+  background: transparent;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:50px;
+  font-size:1.2em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.btnReserva button:hover{
+  background:whitesmoke;
+  color:black;
   
-  .mnuDesplegable button {
+}
+.btnReserva button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background-color: azure;
+  transition:400ms ease all;
+}
+.btnReserva button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btnReserva button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+ 
+.mnuDesplegable button {
     background-color: transparent;
     color: white;
     border: none; 
     cursor: pointer; 
 
-    font-size: 20px; /* Tamaño del texto del botón */
+    font-size: 20px;
 
-    width: 100px; /* Ancho del botón */
-    height: 50px; /* Altura del botón */
+    width: 100px; 
+    height: 50px; 
   }
-
-  .mnuDesplegable button mat-icon {
+  
+.mnuDesplegable button mat-icon {
+    
     
     font-size: 24px;
 
