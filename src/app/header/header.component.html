@@ -1,21 +1,29 @@
 <div class="container">
   <div class="mnuDesplegable">
-    <button mat-button [matMenuTriggerFor]="menu">
-      <mat-icon>menu</mat-icon></button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item (click)="navigateTo('home')">Home</button>
-      <button mat-menu-item href="https://drive.google.com/file/d/1_EHsi6sKOsecYc6Ef8iaLafyCchoekoR/view" (click)="navigateTo('carta')">Carta</button>
-      <button mat-menu-item (click)="navigateTo('pedidosYa')">PedidosYa</button>
-      <button mat-menu-item (click)="navigateTo('whatsapp')">WhatsApp</button>
-    </mat-menu>
 
+    <div class="btnmenu" (click)="toggleNav()">
+      <mat-icon>menu</mat-icon> 
+    </div>
+    
   </div>
-  <div class="title">
+  <div class="title"> 
     <h1>Resto la casita Don Aldo</h1>
   </div>
-
+  
   <div class="btnReserva">
     <button class="width 60px">Hace tu reserva acá!</button>
   </div>
-
+  
 </div>
+
+<div class="sidenav" [class.open]="isNavOpen">
+  <ul class="info">
+    <li><a href="https://drive.google.com/file/d/1_EHsi6sKOsecYc6Ef8iaLafyCchoekoR/view" target="_blank" (click)="closeNav()">Carta</a></li>
+    <li><a href="https://www.pedidosya.com.ar/restaurantes/mendoza/la-casita-de-don-aldo-648dc0a6-b8ce-411b-b935-446ebe3b5b21-menu" target="_blank" (click)="closeNav()">PedidosYa</a></li>
+    <li><a href="https://wa.me/3512836055?text=Hola,%20quiero%20hacer%20un%20pedido" target="_blank">WhatsApp</a></li>
+
+    <li><a href="#" (click)="closeNav()">Cerrar</a></li>
+  </ul>
+</div>
+
+
