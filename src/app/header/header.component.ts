@@ -4,8 +4,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatListModule } from '@angular/material/list';
-import { Router } from '@angular/router';
 import { MatMenuModule } from '@angular/material/menu';
+import {MatSidenavModule} from '@angular/material/sidenav';
+
 
 
 @Component({
@@ -18,7 +19,9 @@ import { MatMenuModule } from '@angular/material/menu';
      MatButtonToggleModule,
      MatListModule,
      MatMenuModule,
-     
+     MatSidenavModule,
+     MatButtonModule,
+    
      
      ],
 
@@ -27,12 +30,30 @@ import { MatMenuModule } from '@angular/material/menu';
 })
 export class HeaderComponent {
 
-  constructor(private router: Router) {}
 
-  navigateTo(route: string) {
-    
-    this.router.navigate([route]);
+
+
+
+toggleNav() {
+  this.isNavOpen = !this.isNavOpen;
+}
+
+  isNavOpen: boolean = false;
+
+
+  closeNav() {
+    this.isNavOpen = false;
   }
+
+
+
+
+
+
+
+
+
+ 
 
   
 

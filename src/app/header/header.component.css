@@ -1,117 +1,113 @@
 .container {
-    height: 70px;
-    background-color: black;
-    display: flex;
-    justify-content: space-between; /* Distribuye los elementos horizontalmente */
-    align-items: center; /* Centra verticalmente los elementos */
-    padding: 0 20px; /* Agrega un espacio interior horizontal */
-    margin: 0;
-  }
-  
-  .title {
-
-    color: white;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding-left: 30px;
-    
-  }
-  
-  .mat-menu-panel {
-    
-    width: 300px; /* Ancho del menú desplegable */
-    margin-left: auto; /* Centra el menú desplegable horizontalmente */
-    background-color: black; /* Cambia el color de fondo del menú desplegable */
-  }
-  
-  /* .btnReserva {
-
-    display: flex;
-    padding: 30px;
-
-    height: 38px;
-
-    
-    
-    
-  }
-  .btnReserva button{
-
-    color: white;
-    background-color: transparent;
-    border: none;
-    
-  }
-
-  .btnReserva button:hover {
-    background-color: white; 
-    color: black;
+  height: 70px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
- */
+
+.title {
+
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.btnmenu {
+
+  display: flex;
+  justify-content: center;
 
 
- .btnReserva {
+  color:white;
+  cursor: pointer;
 
-    display: flex;
-    
-    
-  }
+}
 
-  .btnReserva button{
+.btnReserva button {
   background: transparent;
-  color:#fff;
-  border:none;
-  position:relative;
-  height:50px;
-  font-size:1.2em;
-  padding:0 2em;
-  cursor:pointer;
-  transition:800ms ease all;
-  outline:none;
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 50px;
+  font-size: 1.2em;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 0.8s ease all;
+  outline: none;
 }
-.btnReserva button:hover{
-  background:whitesmoke;
-  color:black;
-  
+
+.btnReserva button:hover {
+  background: whitesmoke;
+  color: black;
 }
-.btnReserva button:before,button:after{
-  content:'';
-  position:absolute;
-  top:0;
-  right:0;
-  height:2px;
-  width:0;
+
+.btnReserva button:before,
+.btnReserva button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
   background-color: azure;
-  transition:400ms ease all;
+  transition: 0.4s ease all;
 }
-.btnReserva button:after{
-  right:inherit;
-  top:inherit;
-  left:0;
-  bottom:0;
-}
-.btnReserva button:hover:before,button:hover:after{
-  width:100%;
-  transition:800ms ease all;
-}
- 
-.mnuDesplegable button {
-    background-color: transparent;
-    color: white;
-    border: none; 
-    cursor: pointer; 
 
-    font-size: 20px;
+.btnReserva button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
 
-    width: 100px; 
-    height: 50px; 
-  }
+.btnReserva button:hover:before,
+.btnReserva button:hover:after {
+  width: 100%;
+  transition: 0.8s ease all;
+}
+
+.sidenav {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Inicialmente oculto fuera de la pantalla */
+  width: 250px;
+  height: 100%;
+  background-color: black;
+  transition: left 0.5s ease; /* Transición suave al abrir/cerrar */
+  text-decoration: none;
+
   
-.mnuDesplegable button mat-icon {
-    
-    
-    font-size: 24px;
+}
 
-  }
+.sidenav .info {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+
+}
+
+.sidenav .info li {
+  padding-top: 30px;
+  margin-bottom: 15px; 
+}
+
+
+.sidenav .info li a {
+
+  justify-content: center;
+  text-decoration: none; 
+  color: whitesmoke; 
+  font-size: 25px; 
+
+  
+}
+
+
+.sidenav.open {
+  left: 0; 
+}
+
 
