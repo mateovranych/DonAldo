@@ -1,5 +1,5 @@
 .container {
-  height: 70px;
+  height: 100px;
   background-color: black;
   display: flex;
   justify-content: space-between;
@@ -13,6 +13,8 @@
   display: flex;
   align-items: center;
   margin: 0;
+  
+  
 }
 
 .btnmenu {
@@ -23,6 +25,9 @@
 
   color:white;
   cursor: pointer;
+
+
+  padding-left: 30px;
 
 }
 
@@ -35,7 +40,7 @@
   font-size: 1.2em;
   padding: 0 2em;
   cursor: pointer;
-  transition: 0.8s ease all;
+  transition: 0.9s ease all;
   outline: none;
 }
 
@@ -53,7 +58,7 @@
   height: 2px;
   width: 0;
   background-color: azure;
-  transition: 0.4s ease all;
+  transition: 0.5s ease all;
 }
 
 .btnReserva button:after {
@@ -72,11 +77,11 @@
 .sidenav {
   position: fixed;
   top: 0;
-  left: -250px; /* Inicialmente oculto fuera de la pantalla */
+  left: -250px; 
   width: 250px;
   height: 100%;
   background-color: black;
-  transition: left 0.5s ease; /* Transición suave al abrir/cerrar */
+  transition: left 0.7s ease; 
   text-decoration: none;
 
   
@@ -111,3 +116,28 @@
 }
 
 
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 10px; /* Reducir el padding en pantallas más pequeñas */
+  }
+
+  .title {
+    padding: 10px; /* Ajustar el padding para evitar el desbordamiento */
+  }
+
+  .btnmenu {
+    display: flex; /* Mostrar el botón de menú en pantallas más pequeñas */
+    color: whitesmoke;
+    cursor: pointer;
+  }
+
+  .sidenav {
+    width: 100%; /* Ancho completo en pantallas más pequeñas */
+    left: -100%; /* Ocultar el menú lateral por defecto */
+  }
+
+  .sidenav.open {
+    left: 0; /* Mostrar el menú lateral cuando está abierto */
+  }
+}
