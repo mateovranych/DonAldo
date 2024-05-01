@@ -9,10 +9,19 @@
 
 .title {
 
+  height: 94px;
+  width: 223px;
+
   color: whitesmoke;
   display: flex;
   align-items: center;
   margin: 0;
+  
+  background-image: url(logo-solo.png);
+  background-position: center; 
+  background-size: contain;
+
+  
   
   
 }
