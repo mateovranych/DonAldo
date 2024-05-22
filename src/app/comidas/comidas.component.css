@@ -1,0 +1,51 @@
+.body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    height: 1000px;
+}
+
+
+.left, .right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    background-color:rgb(17, 7, 75);
+    font-size: 9px;
+    
+}
+.left .descrip{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 140px;
+    
+}
+
+
+.right{
+
+    background-color: blueviolet;
+    background-size: cover; 
+   background-position: center; 
+    
+    
+}
+
+.descrip{
+
+    font-family: "Dancing Script", cursive;
+    font-size: 40px;
+    font-weight: 100;
+    color: whitesmoke;
+}
